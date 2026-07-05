@@ -117,6 +117,23 @@ const SUBJECTS_2 = [
 <li><b>等加速度運動</b>:加速度が一定。自由落下は重力加速度 g ≒ 9.8 m/s² で加速</li>
 <li>加速度 = 速度の変化 ÷ かかった時間</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="v-tグラフ">
+  <rect x="50" y="100" width="140" height="65" fill="var(--accent)" fill-opacity="0.16"/>
+  <line x1="50" y1="165" x2="305" y2="165" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <line x1="50" y1="25" x2="50" y2="165" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <polygon points="305,165 297,161 297,169" fill="var(--text-sub)"/>
+  <polygon points="50,25 46,33 54,33" fill="var(--text-sub)"/>
+  <text x="300" y="182" font-size="12" fill="var(--text-sub)">t(時間)</text>
+  <text x="20" y="30" font-size="12" fill="var(--text-sub)">v(速さ)</text>
+  <line x1="50" y1="100" x2="285" y2="100" stroke="var(--accent)" stroke-width="2.6"/>
+  <text x="200" y="94" font-size="12" fill="var(--accent)" font-weight="700">等速直線運動</text>
+  <line x1="50" y1="165" x2="245" y2="50" stroke="var(--primary)" stroke-width="2.6"/>
+  <text x="150" y="70" font-size="12" fill="var(--primary)" font-weight="700">等加速度運動</text>
+  <text x="120" y="140" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">面積 = 距離</text>
+</svg>
+<figcaption>速さと時間のグラフ。等速は水平線、等加速度は傾いた直線(傾き=加速度)。グラフとt軸で囲む面積が進んだ距離。</figcaption>
+</figure>
 <h3>ニュートンの運動の3法則</h3>
 <table>
 <tr><th>法則</th><th>内容</th></tr>
@@ -308,6 +325,26 @@ const SUBJECTS_2 = [
 <tr><td>塩基(アルカリ)</td><td>水に溶けて水酸化物イオン OH⁻ を出す。赤リトマス紙を青に。ぬるぬる</td><td>水酸化ナトリウム、アンモニア</td></tr>
 </table>
 <div class="kp"><b>pH(ピーエイチ):</b> 7が中性、7より小さいほど酸性が強い、7より大きいほど塩基性(アルカリ性)が強い。</div>
+<figure class="fig">
+<svg viewBox="0 0 340 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="pHスケール">
+  <defs>
+    <linearGradient id="phgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d1495b"/>
+      <stop offset="50%" stop-color="#2a9d5c"/>
+      <stop offset="100%" stop-color="#2b6cb0"/>
+    </linearGradient>
+  </defs>
+  <rect x="30" y="42" width="280" height="26" rx="4" fill="url(#phgrad)"/>
+  <text x="30" y="84" font-size="11" fill="var(--text)" text-anchor="middle">0</text>
+  <text x="170" y="84" font-size="11" fill="var(--text)" text-anchor="middle">7</text>
+  <text x="310" y="84" font-size="11" fill="var(--text)" text-anchor="middle">14</text>
+  <line x1="170" y1="36" x2="170" y2="74" stroke="var(--text)" stroke-width="2"/>
+  <text x="170" y="28" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">中性 (pH7)</text>
+  <text x="34" y="108" font-size="12" fill="#d1495b" font-weight="700">← 酸性(H⁺)</text>
+  <text x="306" y="108" font-size="12" fill="#2b6cb0" text-anchor="end" font-weight="700">塩基性(OH⁻) →</text>
+</svg>
+<figcaption>pHは0〜14。7が中性で、小さいほど酸性(塩酸など)、大きいほど塩基性(水酸化ナトリウムなど)が強い。</figcaption>
+</figure>
 <div class="formula">中和:酸 + 塩基 → 塩(えん)+ 水<br>例:HCl + NaOH → NaCl + H₂O</div>
 <h3>酸化と還元</h3>
 <ul>
@@ -531,6 +568,39 @@ const SUBJECTS_2 = [
 <li><b>寒冷前線</b>:寒気が暖気を押し上げ、短時間の強い雨。通過後は気温が下がる</li>
 <li><b>温暖前線</b>:暖気が寒気の上をはい上がり、広い範囲で長く弱い雨</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="寒冷前線と温暖前線の断面">
+  <!-- 寒冷前線(左) -->
+  <polygon points="15,150 15,108 100,150" fill="#3b82f6" fill-opacity="0.20"/>
+  <line x1="15" y1="150" x2="165" y2="150" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <ellipse cx="78" cy="62" rx="34" ry="26" fill="var(--text-sub)" fill-opacity="0.35"/>
+  <ellipse cx="55" cy="72" rx="20" ry="16" fill="var(--text-sub)" fill-opacity="0.35"/>
+  <line x1="60" y1="92" x2="56" y2="146" stroke="var(--primary)" stroke-width="2"/>
+  <line x1="78" y1="92" x2="74" y2="146" stroke="var(--primary)" stroke-width="2"/>
+  <line x1="96" y1="92" x2="92" y2="146" stroke="var(--primary)" stroke-width="2"/>
+  <path d="M 95 148 Q 70 120 60 98" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="90" y="24" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">寒冷前線</text>
+  <text x="90" y="172" font-size="11" fill="var(--text-sub)" text-anchor="middle">強い雨・短時間</text>
+  <text x="30" y="140" font-size="10.5" fill="#2563eb" font-weight="700">寒気</text>
+  <!-- 仕切り -->
+  <line x1="180" y1="30" x2="180" y2="180" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- 温暖前線(右) -->
+  <polygon points="345,150 345,120 235,150" fill="#3b82f6" fill-opacity="0.20"/>
+  <line x1="195" y1="150" x2="345" y2="150" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <ellipse cx="285" cy="98" rx="46" ry="15" fill="var(--text-sub)" fill-opacity="0.35"/>
+  <ellipse cx="315" cy="112" rx="30" ry="12" fill="var(--text-sub)" fill-opacity="0.35"/>
+  <line x1="250" y1="128" x2="250" y2="148" stroke="var(--primary)" stroke-width="1.6"/>
+  <line x1="270" y1="130" x2="270" y2="148" stroke="var(--primary)" stroke-width="1.6"/>
+  <line x1="290" y1="132" x2="290" y2="148" stroke="var(--primary)" stroke-width="1.6"/>
+  <line x1="310" y1="134" x2="310" y2="148" stroke="var(--primary)" stroke-width="1.6"/>
+  <path d="M 205 146 Q 260 130 320 118" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="270" y="24" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">温暖前線</text>
+  <text x="270" y="172" font-size="11" fill="var(--text-sub)" text-anchor="middle">弱い雨・広範囲</text>
+  <text x="328" y="140" font-size="10.5" fill="#2563eb" font-weight="700">寒気</text>
+  <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f59e0b"/></marker></defs>
+</svg>
+<figcaption>寒冷前線は寒気が暖気を急に押し上げ、積乱雲で短時間の強い雨。温暖前線は暖気が寒気の上をゆるやかにはい上がり、広範囲に弱い雨(オレンジ矢印=暖気の動き)。</figcaption>
+</figure>
 <h3>地球温暖化とオゾン層</h3>
 <div class="kp"><b>温室効果:</b> 二酸化炭素・メタンなどの温室効果ガスが地表からの熱を吸収し、気温を保つ。ガスの増加が<b>地球温暖化</b>の原因とされる。<br><b>オゾン層</b>:上空で紫外線を吸収し生物を守る。フロンによる破壊(オゾンホール)が問題となった。</div>
 <h3>太陽系と宇宙</h3>

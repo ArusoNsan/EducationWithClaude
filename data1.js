@@ -786,6 +786,20 @@ const SUBJECTS_1 = [
 <li>縮尺25000分の1の地図で4cmは、実際には 4cm × 25000 = 100000cm = <b>1km</b></li>
 <li>主な地図記号:〶=郵便局、⛨(卍)=寺院、文=小中学校、◎=市役所</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="等高線と傾斜">
+  <circle cx="150" cy="100" r="18" fill="none" stroke="var(--text-sub)" stroke-width="1.6"/>
+  <circle cx="158" cy="100" r="34" fill="none" stroke="var(--text-sub)" stroke-width="1.6"/>
+  <circle cx="168" cy="100" r="52" fill="none" stroke="var(--text-sub)" stroke-width="1.6"/>
+  <circle cx="180" cy="100" r="72" fill="none" stroke="var(--text-sub)" stroke-width="1.6"/>
+  <circle cx="150" cy="100" r="3.5" fill="var(--ng)"/>
+  <text x="8" y="96" font-size="12" fill="var(--text)" font-weight="700">間隔せまい</text>
+  <text x="8" y="112" font-size="12" fill="var(--primary)" font-weight="700">= 傾斜が急</text>
+  <text x="312" y="96" font-size="12" fill="var(--text)" text-anchor="end" font-weight="700">間隔広い</text>
+  <text x="312" y="112" font-size="12" fill="var(--primary)" text-anchor="end" font-weight="700">= ゆるやか</text>
+</svg>
+<figcaption>同じ高さを結んだ等高線。線の間隔がせまいほど急斜面、広いほどゆるやかな斜面を表す。赤点は頂上。</figcaption>
+</figure>
 <h3>GIS・GNSS</h3>
 <p><b>GIS(地理情報システム)</b>:地図上に統計などのデータを重ねて分析する仕組み。<b>GNSS(GPSなど)</b>:人工衛星で位置を測定する仕組み。ハザードマップやカーナビに活用。</p>`,
       quiz: [
