@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合格マスター | 高卒認定・大学入試・東大入試 対策教材</title>
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="brand" id="btn-home" title="コース選択へ">
+      <span class="brand-mark">合</span>
+      <span class="brand-text">合格マスター<span class="brand-course" id="brand-course"></span></span>
+    </button>
+    <nav class="topnav" id="topnav" hidden>
+      <button class="nav-btn" data-view="home">ホーム</button>
+      <button class="nav-btn" data-view="review">弱点復習 <span class="badge" id="review-badge" hidden>0</span></button>
+      <button class="nav-btn" data-view="mock">実力テスト</button>
+      <button class="nav-btn" data-view="guide">コース案内</button>
+      <button class="nav-btn nav-courses" data-view="courses">🔀 コース変更</button>
+      <button class="icon-btn" id="btn-theme" title="ダーク/ライト切替">🌙</button>
+    </nav>
+    <nav class="topnav" id="topnav-top">
+      <button class="icon-btn" id="btn-theme-top" title="ダーク/ライト切替">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app" class="container"></main>
+
+<footer class="footer">
+  <p>合格マスター — 学習記録はこの端末のブラウザ(localStorage)にのみ保存されます。</p>
+  <p class="footer-small">最新の試験日程・出願方法・入試制度は各公式情報(文部科学省・各大学)を必ず確認してください。</p>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="data1.js?v=5"></script>
+<script src="data2.js?v=5"></script>
+<script src="data-daigaku.js?v=5"></script>
+<script src="data-toudai.js?v=5"></script>
+<script src="app.js?v=5"></script>
+</body>
+</html>
