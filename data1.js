@@ -107,6 +107,37 @@ const SUBJECTS_1 = [
 <h3>漢文は「読む順番」のルールを覚える</h3>
 <p>漢文は中国語の語順で書かれた文を、記号(返り点)を使って日本語の語順で読みます。</p>
 <div class="kp"><b>レ点:</b> すぐ下の1字から上の1字へ返る。<br><b>一・二点:</b> 「一」の付いた字まで読んでから「二」の付いた字に返る(2字以上へだてて返る)。</div>
+<figure class="fig">
+<svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="返り点と読む順序">
+  <text x="82" y="26" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">レ点</text>
+  <text x="58" y="70" font-size="24" fill="var(--text)" text-anchor="middle">読</text>
+  <text x="106" y="70" font-size="24" fill="var(--text)" text-anchor="middle">書</text>
+  <text x="72" y="80" font-size="13" fill="var(--primary)" text-anchor="middle" font-weight="700">レ</text>
+  <circle cx="106" cy="98" r="9" fill="none" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="106" y="102" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1</text>
+  <circle cx="58" cy="98" r="9" fill="none" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="58" y="102" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">2</text>
+  <path d="M 98 96 Q 78 118 66 104" fill="none" stroke="var(--accent)" stroke-width="2" marker-end="url(#ka)"/>
+  <text x="82" y="150" font-size="12.5" fill="var(--text-sub)" text-anchor="middle">「書を読む」</text>
+  <line x1="165" y1="18" x2="165" y2="158" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="252" y="26" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">一・二点</text>
+  <text x="207" y="70" font-size="24" fill="var(--text)" text-anchor="middle">読</text>
+  <text x="252" y="70" font-size="24" fill="var(--text)" text-anchor="middle">漢</text>
+  <text x="297" y="70" font-size="24" fill="var(--text)" text-anchor="middle">文</text>
+  <text x="221" y="80" font-size="12" fill="var(--primary)" text-anchor="middle" font-weight="700">二</text>
+  <text x="311" y="80" font-size="12" fill="var(--primary)" text-anchor="middle" font-weight="700">一</text>
+  <circle cx="252" cy="98" r="9" fill="none" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="252" y="102" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1</text>
+  <circle cx="297" cy="98" r="9" fill="none" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="297" y="102" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">2</text>
+  <circle cx="207" cy="98" r="9" fill="none" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="207" y="102" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">3</text>
+  <path d="M 289 112 Q 240 138 213 108" fill="none" stroke="var(--accent)" stroke-width="2" marker-end="url(#ka)"/>
+  <text x="252" y="152" font-size="12.5" fill="var(--text-sub)" text-anchor="middle">「漢文を読む」</text>
+  <defs><marker id="ka" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+</svg>
+<figcaption>丸数字が読む順。レ点は下の1字→すぐ上へ。一・二点は「一」まで読んでから「二」へ返る(オレンジ矢印=返る動き)。</figcaption>
+</figure>
 <h3>最重要句法</h3>
 <table>
 <tr><th>句法</th><th>読み方</th><th>意味</th></tr>
@@ -168,6 +199,28 @@ const SUBJECTS_1 = [
 <tr><td>謙譲語</td><td>自分の動作をへりくだる</td><td>伺う、申し上げる、いただく</td></tr>
 <tr><td>丁寧語</td><td>聞き手への丁寧さ</td><td>です、ます、ございます</td></tr>
 </table>
+<figure class="fig">
+<svg viewBox="0 0 330 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="尊敬語と謙譲語の方向">
+  <text x="88" y="24" font-size="13" fill="var(--primary)" text-anchor="middle" font-weight="700">尊敬語</text>
+  <circle cx="88" cy="92" r="12" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.6"/>
+  <path d="M74 135 L81 116 L95 116 L102 135 Z" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.6"/>
+  <line x1="128" y1="138" x2="128" y2="58" stroke="var(--primary)" stroke-width="2.6" marker-end="url(#up)"/>
+  <text x="88" y="158" font-size="11" fill="var(--text)" text-anchor="middle">相手の動作を高める</text>
+  <text x="88" y="175" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">おっしゃる・召し上がる</text>
+  <line x1="165" y1="16" x2="165" y2="180" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="242" y="24" font-size="13" fill="var(--accent)" text-anchor="middle" font-weight="700">謙譲語</text>
+  <circle cx="242" cy="92" r="12" fill="var(--bg-soft)" stroke="var(--accent)" stroke-width="1.6"/>
+  <path d="M228 135 L235 116 L249 116 L256 135 Z" fill="var(--bg-soft)" stroke="var(--accent)" stroke-width="1.6"/>
+  <line x1="202" y1="58" x2="202" y2="138" stroke="var(--accent)" stroke-width="2.6" marker-end="url(#dn)"/>
+  <text x="242" y="158" font-size="11" fill="var(--text)" text-anchor="middle">自分の動作を低める</text>
+  <text x="242" y="175" font-size="11" fill="var(--accent)" text-anchor="middle" font-weight="700">伺う・申し上げる</text>
+  <defs>
+    <marker id="up" markerWidth="10" markerHeight="10" refX="3" refY="5" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="var(--primary)"/></marker>
+    <marker id="dn" markerWidth="10" markerHeight="10" refX="3" refY="5" orient="auto"><path d="M0,0 L3,6 L6,0 Z" fill="var(--accent)"/></marker>
+  </defs>
+</svg>
+<figcaption>尊敬語は相手の動作を高め(↑)、謙譲語は自分の動作を低めて(↓)相手を立てる。丁寧語(です・ます)は聞き手への敬意。</figcaption>
+</figure>
 <div class="warn"><b>二重敬語に注意:</b> 「おっしゃられる」(おっしゃる+れる)、「お召し上がりになられる」は敬語の重ねすぎで誤り。</div>`,
       quiz: [
         { q: "「実験のタイショウ群を設ける」のタイショウに当てはまる漢字はどれか。",
@@ -436,6 +489,30 @@ const SUBJECTS_1 = [
 </table>
 <div class="warn"><b>現在完了は過去の一点を表す語と一緒に使えない:</b> × I have seen him yesterday. → ○ I saw him yesterday.<br>yesterday, ago, last week などがあれば<b>過去形</b>。</div>
 <div class="kp"><b>完了形の目印:</b> for(〜の間)、since(〜以来)、just(ちょうど)、already(すでに)、yet(まだ/もう)、ever(今までに)</div>
+<figure class="fig">
+<svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="英語の時制の時間軸">
+  <line x1="18" y1="95" x2="320" y2="95" stroke="var(--text-sub)" stroke-width="2" marker-end="url(#tr)"/>
+  <text x="24" y="88" font-size="11" fill="var(--text-sub)">過去</text>
+  <text x="316" y="88" font-size="11" fill="var(--text-sub)" text-anchor="end">未来</text>
+  <line x1="197" y1="62" x2="197" y2="128" stroke="var(--accent)" stroke-width="2"/>
+  <text x="197" y="54" font-size="11.5" fill="var(--accent)" text-anchor="middle" font-weight="700">現在 (now)</text>
+  <path d="M 85 92 Q 141 56 193 90" fill="none" stroke="var(--primary)" stroke-width="2.2" marker-end="url(#tp)"/>
+  <text x="135" y="46" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">現在完了 have+p.p.</text>
+  <circle cx="85" cy="95" r="4.5" fill="var(--text)"/>
+  <text x="85" y="120" font-size="11.5" fill="var(--text)" text-anchor="middle" font-weight="700">過去形</text>
+  <text x="85" y="136" font-size="11" fill="var(--text-sub)" text-anchor="middle">played</text>
+  <text x="197" y="120" font-size="11.5" fill="var(--text)" text-anchor="middle" font-weight="700">現在形/進行形</text>
+  <text x="197" y="136" font-size="11" fill="var(--text-sub)" text-anchor="middle">play / be 〜ing</text>
+  <circle cx="288" cy="95" r="4.5" fill="var(--text)"/>
+  <text x="288" y="120" font-size="11.5" fill="var(--text)" text-anchor="middle" font-weight="700">未来</text>
+  <text x="288" y="136" font-size="11" fill="var(--text-sub)" text-anchor="middle">will</text>
+  <defs>
+    <marker id="tr" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker>
+    <marker id="tp" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--primary)"/></marker>
+  </defs>
+</svg>
+<figcaption>時制を時間軸で整理。過去形は過去の一点、現在完了は過去から現在までをつなぐ(だから yesterday とは併用不可)。</figcaption>
+</figure>
 <h3>助動詞の意味</h3>
 <table>
 <tr><th>助動詞</th><th>中心の意味</th></tr>
@@ -623,6 +700,33 @@ const SUBJECTS_1 = [
 </ul>
 <h3>日本の開国</h3>
 <div class="kp"><b>1853年 ペリー来航</b>(浦賀)→ 1854年 <b>日米和親条約</b>(開国)→ 1858年 <b>日米修好通商条約</b>(不平等条約:領事裁判権を認め、関税自主権がない)</div>
+<figure class="fig">
+<svg viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="開国から明治の年表">
+  <line x1="18" y1="75" x2="345" y2="75" stroke="var(--text-sub)" stroke-width="2" marker-end="url(#hy)"/>
+  <line x1="45" y1="68" x2="45" y2="82" stroke="var(--primary)" stroke-width="1.5"/>
+  <circle cx="45" cy="75" r="4" fill="var(--primary)"/>
+  <text x="45" y="97" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1853</text>
+  <text x="45" y="112" font-size="10.5" fill="var(--text)" text-anchor="middle">ペリー来航</text>
+  <line x1="120" y1="68" x2="120" y2="82" stroke="var(--primary)" stroke-width="1.5"/>
+  <circle cx="120" cy="75" r="4" fill="var(--primary)"/>
+  <text x="120" y="58" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1858</text>
+  <text x="120" y="44" font-size="10.5" fill="var(--text)" text-anchor="middle">通商条約</text>
+  <line x1="195" y1="68" x2="195" y2="82" stroke="var(--primary)" stroke-width="1.5"/>
+  <circle cx="195" cy="75" r="4" fill="var(--primary)"/>
+  <text x="195" y="97" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1868</text>
+  <text x="195" y="112" font-size="10.5" fill="var(--text)" text-anchor="middle">明治維新</text>
+  <line x1="265" y1="68" x2="265" y2="82" stroke="var(--primary)" stroke-width="1.5"/>
+  <circle cx="265" cy="75" r="4" fill="var(--primary)"/>
+  <text x="265" y="58" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1873</text>
+  <text x="265" y="44" font-size="10.5" fill="var(--text)" text-anchor="middle">地租改正</text>
+  <line x1="325" y1="68" x2="325" y2="82" stroke="var(--primary)" stroke-width="1.5"/>
+  <circle cx="325" cy="75" r="4" fill="var(--primary)"/>
+  <text x="325" y="97" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">1889</text>
+  <text x="325" y="112" font-size="10.5" fill="var(--text)" text-anchor="middle">帝国憲法</text>
+  <defs><marker id="hy" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker></defs>
+</svg>
+<figcaption>開国から立憲国家へ。1853年の黒船来航をきっかけに、約35年で明治維新・近代化・憲法制定へと進んだ流れ。</figcaption>
+</figure>
 <h3>明治維新の主な改革</h3>
 <table>
 <tr><th>政策</th><th>内容</th></tr>
@@ -685,7 +789,32 @@ const SUBJECTS_1 = [
 <li>1939年 第二次世界大戦勃発(ドイツのポーランド侵攻)</li>
 <li>1941年12月 真珠湾攻撃で太平洋戦争開戦</li>
 <li>1945年 沖縄戦、広島(8/6)・長崎(8/9)への原爆投下、<b>8月15日 ポツダム宣言受諾を国民に発表(終戦)</b></li>
-</ul>`,
+</ul>
+<figure class="fig">
+<svg viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="二つの世界大戦の年表">
+  <line x1="18" y1="75" x2="348" y2="75" stroke="var(--text-sub)" stroke-width="2" marker-end="url(#hy2)"/>
+  <line x1="40" y1="68" x2="40" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="40" cy="75" r="4" fill="var(--primary)"/>
+  <text x="40" y="97" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1894</text>
+  <text x="40" y="111" font-size="10" fill="var(--text)" text-anchor="middle">日清戦争</text>
+  <line x1="98" y1="68" x2="98" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="98" cy="75" r="4" fill="var(--primary)"/>
+  <text x="98" y="58" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1904</text>
+  <text x="98" y="44" font-size="10" fill="var(--text)" text-anchor="middle">日露戦争</text>
+  <line x1="156" y1="68" x2="156" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="156" cy="75" r="4" fill="var(--primary)"/>
+  <text x="156" y="97" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1914</text>
+  <text x="156" y="111" font-size="10" fill="var(--text)" text-anchor="middle">第一次大戦</text>
+  <line x1="222" y1="68" x2="222" y2="82" stroke="var(--ng)" stroke-width="1.5"/><circle cx="222" cy="75" r="4" fill="var(--ng)"/>
+  <text x="222" y="58" font-size="10.5" fill="var(--ng)" text-anchor="middle" font-weight="700">1929</text>
+  <text x="222" y="44" font-size="10" fill="var(--text)" text-anchor="middle">世界恐慌</text>
+  <line x1="285" y1="68" x2="285" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="285" cy="75" r="4" fill="var(--primary)"/>
+  <text x="285" y="97" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1939</text>
+  <text x="285" y="111" font-size="10" fill="var(--text)" text-anchor="middle">第二次大戦</text>
+  <line x1="335" y1="68" x2="335" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="335" cy="75" r="4" fill="var(--primary)"/>
+  <text x="335" y="58" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1945</text>
+  <text x="335" y="44" font-size="10" fill="var(--text)" text-anchor="middle">終戦</text>
+  <defs><marker id="hy2" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker></defs>
+</svg>
+<figcaption>帝国主義の時代から二度の世界大戦へ。1929年の世界恐慌(赤)が各国の対立を深め、第二次大戦・敗戦につながった。</figcaption>
+</figure>`,
       quiz: [
         { q: "日露戦争の講和条約(ポーツマス条約)に対して国民の不満が爆発した理由はどれか。",
           c: ["領土をすべて失ったから", "賠償金が得られなかったから", "戦争が100年続いたから", "首都が占領されたから"],
@@ -733,7 +862,32 @@ const SUBJECTS_1 = [
 <li>1991年 ソ連解体。湾岸戦争</li>
 <li>日本:1980年代後半のバブル経済 → 1991年ごろ崩壊 →「失われた10年」</li>
 <li>グローバル化:EU発足(1993)、インターネット普及、2001年 アメリカ同時多発テロ</li>
-</ul>`,
+</ul>
+<figure class="fig">
+<svg viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="戦後の年表">
+  <line x1="18" y1="75" x2="348" y2="75" stroke="var(--text-sub)" stroke-width="2" marker-end="url(#hy3)"/>
+  <line x1="40" y1="68" x2="40" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="40" cy="75" r="4" fill="var(--primary)"/>
+  <text x="40" y="97" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1945</text>
+  <text x="40" y="111" font-size="10" fill="var(--text)" text-anchor="middle">終戦・GHQ</text>
+  <line x1="98" y1="68" x2="98" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="98" cy="75" r="4" fill="var(--primary)"/>
+  <text x="98" y="58" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1951</text>
+  <text x="98" y="44" font-size="10" fill="var(--text)" text-anchor="middle">独立回復</text>
+  <line x1="156" y1="68" x2="156" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="156" cy="75" r="4" fill="var(--primary)"/>
+  <text x="156" y="97" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1956</text>
+  <text x="156" y="111" font-size="10" fill="var(--text)" text-anchor="middle">国連加盟</text>
+  <line x1="216" y1="68" x2="216" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="216" cy="75" r="4" fill="var(--primary)"/>
+  <text x="216" y="58" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1964</text>
+  <text x="216" y="44" font-size="10" fill="var(--text)" text-anchor="middle">東京五輪</text>
+  <line x1="278" y1="68" x2="278" y2="82" stroke="var(--ng)" stroke-width="1.5"/><circle cx="278" cy="75" r="4" fill="var(--ng)"/>
+  <text x="278" y="97" font-size="10.5" fill="var(--ng)" text-anchor="middle" font-weight="700">1973</text>
+  <text x="278" y="111" font-size="10" fill="var(--text)" text-anchor="middle">石油危機</text>
+  <line x1="335" y1="68" x2="335" y2="82" stroke="var(--primary)" stroke-width="1.5"/><circle cx="335" cy="75" r="4" fill="var(--primary)"/>
+  <text x="335" y="58" font-size="10.5" fill="var(--primary)" text-anchor="middle" font-weight="700">1989</text>
+  <text x="335" y="44" font-size="10" fill="var(--text)" text-anchor="middle">冷戦終結</text>
+  <defs><marker id="hy3" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker></defs>
+</svg>
+<figcaption>敗戦・占領から独立回復、高度経済成長を経て冷戦終結へ。1973年の石油危機(赤)が高度成長の終点。</figcaption>
+</figure>`,
       quiz: [
         { q: "戦後の民主化政策として行われたものの組み合わせで正しいものはどれか。",
           c: ["徴兵令・地租改正", "財閥解体・農地改革・女性参政権", "殖産興業・学制", "国家総動員法・治安維持法"],
@@ -835,6 +989,33 @@ const SUBJECTS_1 = [
 <tr><td>寒帯(E)</td><td>一年中低温。ツンドラ・氷雪</td><td>イヌイットの狩猟、永久凍土</td></tr>
 </table>
 <div class="kp"><b>雨温図の読み方:</b> ①気温の折れ線で「南半球か北半球か」(7月が低温なら南半球)②降水量の棒グラフで乾燥・雨季の有無を確認。</div>
+<figure class="fig">
+<svg viewBox="0 0 340 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="雨温図(北半球の温帯)">
+  <rect x="38" y="135" width="14" height="25" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="60" y="132" width="14" height="28" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="82" y="125" width="14" height="35" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="104" y="120" width="14" height="40" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="126" y="115" width="14" height="45" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="148" y="105" width="14" height="55" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="170" y="100" width="14" height="60" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="192" y="102" width="14" height="58" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="214" y="110" width="14" height="50" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="236" y="120" width="14" height="40" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="258" y="128" width="14" height="32" fill="var(--primary)" fill-opacity="0.55"/>
+  <rect x="280" y="132" width="14" height="28" fill="var(--primary)" fill-opacity="0.55"/>
+  <line x1="35" y1="160" x2="315" y2="160" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <line x1="35" y1="58" x2="35" y2="160" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <line x1="315" y1="58" x2="315" y2="160" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <polyline points="45,144 67,141 89,131 111,115 133,102 155,90 177,77 199,74 221,86 243,106 265,125 287,138" fill="none" stroke="var(--ng)" stroke-width="2.4"/>
+  <circle cx="199" cy="74" r="3.5" fill="var(--ng)"/>
+  <text x="34" y="50" font-size="11" fill="var(--primary)" font-weight="700">降水量 mm</text>
+  <text x="316" y="50" font-size="11" fill="var(--ng)" text-anchor="end" font-weight="700">気温 ℃</text>
+  <text x="45" y="175" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">1月</text>
+  <text x="177" y="175" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">7月</text>
+  <text x="287" y="175" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">12月</text>
+</svg>
+<figcaption>雨温図の例(北半球の温帯)。赤い折れ線が気温、青い棒が降水量。7月ごろに気温が最も高い=北半球。逆に7月が低温なら南半球。</figcaption>
+</figure>
 <h3>気候を分けるもの</h3>
 <ul>
 <li>緯度(低緯度ほど暑い)、標高(100m上がると約0.6℃下がる)</li>
@@ -878,6 +1059,22 @@ const SUBJECTS_1 = [
 <li>国土の約4分の3が山地。川は短くて流れが急</li>
 <li>平野は少なく、<b>扇状地</b>(川が山から出る所・果樹園に利用)、<b>三角州</b>(河口・水田や市街地)が発達</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="扇状地と三角州">
+  <rect x="298" y="8" width="40" height="152" fill="var(--primary)" fill-opacity="0.15"/>
+  <text x="318" y="88" font-size="12" fill="var(--primary)" text-anchor="middle" font-weight="700">海</text>
+  <path d="M8,125 L34,58 L56,92 L80,50 L104,122 Z" fill="var(--text-sub)" fill-opacity="0.40"/>
+  <text x="46" y="44" font-size="11" fill="var(--text)" text-anchor="middle" font-weight="700">山地</text>
+  <path d="M78,100 L132,70 L132,142 Z" fill="var(--accent)" fill-opacity="0.22" stroke="var(--accent)" stroke-width="1.4"/>
+  <text x="106" y="163" font-size="11" fill="var(--accent)" text-anchor="middle" font-weight="700">扇状地</text>
+  <path d="M64,88 Q150,110 230,120 Q270,125 300,128" fill="none" stroke="var(--primary)" stroke-width="3"/>
+  <path d="M232,120 L294,104 L300,146 Z" fill="var(--primary)" fill-opacity="0.32" stroke="var(--primary)" stroke-width="1.2"/>
+  <line x1="238" y1="120" x2="296" y2="112" stroke="var(--primary)" stroke-width="1"/>
+  <line x1="238" y1="123" x2="296" y2="138" stroke="var(--primary)" stroke-width="1"/>
+  <text x="258" y="96" font-size="11" fill="var(--primary)" text-anchor="middle" font-weight="700">三角州</text>
+</svg>
+<figcaption>川が山地から平野に出る所にできる扇状地(水はけがよく果樹園に利用)と、河口に土砂がたまってできる三角州(水田・市街地に利用)。</figcaption>
+</figure>
 <h3>日本の気候</h3>
 <div class="kp"><b>季節風(モンスーン)</b>が気候を決める:<br>・冬は北西の季節風 → <b>日本海側に大雪</b>、太平洋側は乾燥した晴天<br>・夏は南東の季節風 → 太平洋側に雨</div>
 <ul>
@@ -967,6 +1164,37 @@ const SUBJECTS_1 = [
       points: `
 <h3>三権分立</h3>
 <div class="kp">権力の集中と濫用を防ぐため、<b>立法権(国会)・行政権(内閣)・司法権(裁判所)</b>に分け、互いに抑制と均衡(チェック・アンド・バランス)を働かせる。モンテスキュー『法の精神』に由来。</div>
+<figure class="fig">
+<svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三権分立の図">
+  <line x1="140" y1="58" x2="90" y2="160" stroke="var(--text-sub)" stroke-width="1.6" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <line x1="200" y1="58" x2="250" y2="160" stroke="var(--text-sub)" stroke-width="1.6" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <line x1="122" y1="182" x2="216" y2="182" stroke="var(--text-sub)" stroke-width="1.6" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <text x="78" y="112" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">不信任</text>
+  <text x="78" y="123" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">・解散</text>
+  <text x="262" y="112" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">違憲審査</text>
+  <text x="262" y="123" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">・弾劾</text>
+  <text x="169" y="205" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">違憲審査 / 最高裁長官の指名</text>
+  <line x1="170" y1="93" x2="170" y2="58" stroke="var(--accent)" stroke-width="1.4"/>
+  <line x1="152" y1="134" x2="112" y2="162" stroke="var(--accent)" stroke-width="1.4"/>
+  <line x1="188" y1="134" x2="228" y2="162" stroke="var(--accent)" stroke-width="1.4"/>
+  <text x="184" y="80" font-size="9.5" fill="var(--accent)" text-anchor="start">選挙</text>
+  <text x="118" y="150" font-size="9.5" fill="var(--accent)" text-anchor="middle">世論</text>
+  <text x="222" y="150" font-size="9.5" fill="var(--accent)" text-anchor="middle">国民審査</text>
+  <rect x="112" y="20" width="116" height="38" rx="8" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="170" y="35" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">国会</text>
+  <text x="170" y="50" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">立法権</text>
+  <rect x="16" y="162" width="104" height="38" rx="8" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="68" y="177" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">内閣</text>
+  <text x="68" y="192" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">行政権</text>
+  <rect x="218" y="162" width="104" height="38" rx="8" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.6"/>
+  <text x="270" y="177" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">裁判所</text>
+  <text x="270" y="192" font-size="10.5" fill="var(--text-sub)" text-anchor="middle">司法権</text>
+  <circle cx="170" cy="114" r="24" fill="var(--accent)" fill-opacity="0.18" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="170" y="118" font-size="12.5" fill="var(--text)" text-anchor="middle" font-weight="700">国民</text>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="4.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker></defs>
+</svg>
+<figcaption>立法・行政・司法が互いを抑制し合う(灰色の両向き矢印)。国民は選挙・世論・国民審査で三権に関わる(オレンジ)。</figcaption>
+</figure>
 <h3>国会</h3>
 <ul>
 <li><b>国権の最高機関、唯一の立法機関</b></li>
@@ -1012,6 +1240,28 @@ const SUBJECTS_1 = [
       points: `
 <h3>市場経済と価格</h3>
 <div class="kp"><b>需要と供給:</b> 需要(買いたい量)が供給(売りたい量)を上回ると価格は<b>上がる</b>。供給過多なら<b>下がる</b>。需要曲線と供給曲線の交点が<b>均衡価格</b>。</div>
+<figure class="fig">
+<svg viewBox="0 0 320 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="需要と供給の曲線">
+  <line x1="45" y1="168" x2="300" y2="168" stroke="var(--text-sub)" stroke-width="1.5" marker-end="url(#sd)"/>
+  <line x1="45" y1="25" x2="45" y2="168" stroke="var(--text-sub)" stroke-width="1.5" marker-end="url(#sdu)"/>
+  <text x="296" y="186" font-size="11" fill="var(--text-sub)" text-anchor="end">数量</text>
+  <text x="40" y="24" font-size="11" fill="var(--text-sub)" text-anchor="end">価格</text>
+  <line x1="60" y1="45" x2="285" y2="158" stroke="var(--primary)" stroke-width="2.6"/>
+  <text x="288" y="150" font-size="11" fill="var(--primary)" font-weight="700">需要 D</text>
+  <line x1="60" y1="158" x2="285" y2="45" stroke="var(--accent)" stroke-width="2.6"/>
+  <text x="288" y="52" font-size="11" fill="var(--accent)" font-weight="700">供給 S</text>
+  <line x1="45" y1="101" x2="172" y2="101" stroke="var(--text-sub)" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="172" y1="101" x2="172" y2="168" stroke="var(--text-sub)" stroke-width="1" stroke-dasharray="3 3"/>
+  <circle cx="172" cy="101" r="4.5" fill="var(--ng)"/>
+  <text x="41" y="105" font-size="10.5" fill="var(--ng)" text-anchor="end" font-weight="700">均衡価格</text>
+  <text x="172" y="184" font-size="10.5" fill="var(--ng)" text-anchor="middle" font-weight="700">均衡数量</text>
+  <defs>
+    <marker id="sd" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker>
+    <marker id="sdu" markerWidth="9" markerHeight="9" refX="3" refY="5" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="var(--text-sub)"/></marker>
+  </defs>
+</svg>
+<figcaption>右下がりの需要曲線と右上がりの供給曲線の交点が均衡価格・均衡数量。需要が増えれば需要曲線が右へ動き価格は上がる。</figcaption>
+</figure>
 <ul>
 <li>独占・寡占:少数の企業が市場を支配 → 価格競争が弱まる → <b>独占禁止法</b>(公正取引委員会が運用)</li>
 </ul>

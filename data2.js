@@ -19,6 +19,30 @@ const SUBJECTS_2 = [
 <li>光は<b>直進</b>する。太陽光(白色光)はプリズムで七色に分かれる(<b>分散</b>)=虹のしくみ</li>
 <li>物が色づいて見えるのは、その色の光を<b>反射</b>し、他の色を吸収するため</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光の反射と屈折">
+  <rect x="20" y="110" width="280" height="78" fill="var(--primary)" fill-opacity="0.10"/>
+  <line x1="20" y1="110" x2="300" y2="110" stroke="var(--text-sub)" stroke-width="1.5"/>
+  <line x1="160" y1="30" x2="160" y2="192" stroke="var(--text-sub)" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="150" y="42" font-size="10" fill="var(--text-sub)" text-anchor="end">法線</text>
+  <text x="28" y="102" font-size="11" fill="var(--text-sub)">空気</text>
+  <text x="28" y="128" font-size="11" fill="var(--primary)" font-weight="700">水(密)</text>
+  <line x1="86" y1="44" x2="160" y2="110" stroke="var(--primary)" stroke-width="2.4" marker-end="url(#lr)"/>
+  <line x1="160" y1="110" x2="234" y2="44" stroke="var(--primary)" stroke-width="2.4" marker-end="url(#lr)"/>
+  <line x1="160" y1="110" x2="198" y2="186" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#lo)"/>
+  <path d="M160,84 A26 26 0 0 0 141,93" fill="none" stroke="var(--text-sub)" stroke-width="1"/>
+  <path d="M160,84 A26 26 0 0 1 179,93" fill="none" stroke="var(--text-sub)" stroke-width="1"/>
+  <path d="M160,136 A26 26 0 0 1 172,133" fill="none" stroke="var(--accent)" stroke-width="1"/>
+  <text x="123" y="80" font-size="10" fill="var(--text)" text-anchor="middle">入射角</text>
+  <text x="197" y="80" font-size="10" fill="var(--text)" text-anchor="middle">反射角</text>
+  <text x="150" y="162" font-size="10" fill="var(--accent)" text-anchor="middle">屈折角</text>
+  <defs>
+    <marker id="lr" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--primary)"/></marker>
+    <marker id="lo" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent)"/></marker>
+  </defs>
+</svg>
+<figcaption>反射では入射角=反射角。屈折では、水など密な物質へ入るとき光は法線側へ曲がる(屈折角<入射角)。境界で速さが変わるために起こる。</figcaption>
+</figure>
 <h3>熱の伝わり方</h3>
 <table>
 <tr><th>伝わり方</th><th>しくみ</th><th>例</th></tr>
@@ -74,6 +98,25 @@ const SUBJECTS_2 = [
 </table>
 <h3>光合成と呼吸(生物の基本)</h3>
 <div class="formula">光合成:二酸化炭素 + 水 +(光エネルギー)→ 栄養分(デンプン)+ 酸素<br>呼吸:栄養分 + 酸素 → 二酸化炭素 + 水 + エネルギー</div>
+<figure class="fig">
+<svg viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光合成と呼吸">
+  <path d="M78,62 Q170,18 262,62" fill="none" stroke="var(--primary)" stroke-width="2.4" marker-end="url(#pc)"/>
+  <text x="170" y="26" font-size="12" fill="var(--primary)" text-anchor="middle" font-weight="700">光合成(光を使う)</text>
+  <path d="M262,118 Q170,162 78,118" fill="none" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#rc)"/>
+  <text x="170" y="158" font-size="12" fill="var(--accent)" text-anchor="middle" font-weight="700">呼吸(エネルギーを取り出す)</text>
+  <rect x="18" y="68" width="112" height="46" rx="8" fill="var(--bg-soft)" stroke="var(--line)" stroke-width="1.4"/>
+  <text x="74" y="87" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">二酸化炭素</text>
+  <text x="74" y="103" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">＋ 水</text>
+  <rect x="210" y="68" width="112" height="46" rx="8" fill="var(--bg-soft)" stroke="var(--line)" stroke-width="1.4"/>
+  <text x="266" y="87" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">酸素</text>
+  <text x="266" y="103" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">＋ 栄養分</text>
+  <defs>
+    <marker id="pc" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--primary)"/></marker>
+    <marker id="rc" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent)"/></marker>
+  </defs>
+</svg>
+<figcaption>光合成と呼吸は互いに逆向きの反応。植物は光合成で栄養分と酸素をつくり、呼吸でエネルギーを取り出す(動物は呼吸のみ)。</figcaption>
+</figure>
 <ul>
 <li>植物は光合成も呼吸も行う。動物は呼吸のみ</li>
 <li>食物連鎖:生産者(植物)→ 消費者(草食動物→肉食動物)→ 分解者(菌類・細菌)</li>
@@ -456,6 +499,31 @@ const SUBJECTS_2 = [
 <li><b>血糖(血液中の糖)を下げる</b>ホルモンは<b>インスリン</b>(すい臓から)。不足すると糖尿病</li>
 <li>血糖を上げるホルモン:グルカゴン、アドレナリンなど</li>
 </ul>
+<figure class="fig">
+<svg viewBox="0 0 340 178" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="血糖の調節">
+  <path d="M62,62 Q114,22 164,60" fill="none" stroke="var(--primary)" stroke-width="2.2" marker-end="url(#fi)"/>
+  <text x="110" y="26" font-size="10" fill="var(--primary)" text-anchor="middle" font-weight="700">インスリンで下げる</text>
+  <path d="M278,62 Q226,22 176,60" fill="none" stroke="var(--accent)" stroke-width="2.2" marker-end="url(#fg)"/>
+  <text x="232" y="26" font-size="10" fill="var(--accent)" text-anchor="middle" font-weight="700">グルカゴン等で上げる</text>
+  <path d="M148,110 Q100,150 62,112" fill="none" stroke="var(--text-sub)" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#fd)"/>
+  <text x="96" y="166" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">食後に上昇</text>
+  <path d="M192,110 Q240,150 278,112" fill="none" stroke="var(--text-sub)" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#fd)"/>
+  <text x="244" y="166" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">空腹で低下</text>
+  <rect x="18" y="64" width="82" height="44" rx="8" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.4"/>
+  <text x="59" y="91" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">血糖 高い</text>
+  <rect x="129" y="64" width="82" height="44" rx="8" fill="var(--accent)" fill-opacity="0.16" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="170" y="84" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">血糖 正常</text>
+  <text x="170" y="99" font-size="9.5" fill="var(--text-sub)" text-anchor="middle">一定に保つ</text>
+  <rect x="240" y="64" width="82" height="44" rx="8" fill="var(--primary-soft)" stroke="var(--primary)" stroke-width="1.4"/>
+  <text x="281" y="91" font-size="12" fill="var(--text)" text-anchor="middle" font-weight="700">血糖 低い</text>
+  <defs>
+    <marker id="fi" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--primary)"/></marker>
+    <marker id="fg" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent)"/></marker>
+    <marker id="fd" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--text-sub)"/></marker>
+  </defs>
+</svg>
+<figcaption>血糖が上がればインスリンが下げ、下がればグルカゴン等が上げて、つねに正常へ戻す(負のフィードバック)。すい臓が中心的に働く。</figcaption>
+</figure>
 <h3>肝臓と腎臓</h3>
 <ul>
 <li><b>肝臓</b>:栄養分の貯蔵、有害物質の解毒、胆汁の生成</li>
