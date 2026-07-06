@@ -230,6 +230,16 @@ button { font-family: inherit; }
   background: var(--bg-soft); border-radius: 8px; padding: 10px 14px; margin: 8px 0;
   font-family: "Cambria Math", "Segoe UI", serif; font-size: 1.02rem;
 }
+.passage {
+  background: var(--bg-soft); border-left: 4px solid var(--primary);
+  border-radius: 8px; padding: 14px 18px; margin: 12px 0; line-height: 2;
+}
+.passage.en { line-height: 1.95; }
+.passage .pnote {
+  display: block; margin-top: 12px; padding-top: 8px; font-size: .82rem;
+  color: var(--text-sub); border-top: 1px dashed var(--line);
+}
+.passage .pt { display: block; font-weight: 700; color: var(--primary); margin-bottom: 6px; font-size: .85rem; }
 .fig { margin: 16px 0; text-align: center; }
 .fig svg {
   width: 100%; max-width: 440px; height: auto;
